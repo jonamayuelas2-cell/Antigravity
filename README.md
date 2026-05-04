@@ -19,7 +19,7 @@
 
 ### [Estado Actual] 📍
 *   **PWA Principal:** Operativa y con Service Worker registrado. 📲
-*   **Roma Eterna:** Vinculada al puerto `8080`. 🏛️
+*   **Ciudades del mundo:** Vinculada al puerto `8080`. 🌍
 *   **Restaurante Mexicano:** Vinculado al puerto `8082`. 🌮
 
 ---
