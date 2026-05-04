@@ -364,6 +364,63 @@ a {
   transition: 0.2s ease;
 }
 
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.repo-card {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.14), rgba(190, 242, 100, 0.06)),
+    var(--panel);
+  padding: 1.2rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(190, 242, 100, 0.42);
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(190, 242, 100, 0.1)),
+    var(--panel-strong);
+}
+
+.repo-kicker {
+  width: fit-content;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.6rem;
+  color: var(--lime);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.repo-card strong {
+  display: block;
+  margin-top: auto;
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.repo-card small {
+  display: block;
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  word-break: break-word;
+}
+
 .workflow-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -426,6 +483,7 @@ footer a {
 
   .stats-band,
   .project-grid,
+  .repo-grid,
   .workflow-grid {
     grid-template-columns: 1fr;
   }

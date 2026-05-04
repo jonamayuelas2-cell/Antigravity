@@ -1,0 +1,17 @@
+{
+  "name": "antigravity-hub",
+  "version": "1.0.0",
+  "description": "Repositorio central de PWAs Antigravity",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx concurrently \"npx serve -l 3000 .\" \"npx serve -l 8080 ../Roma\" \"npx serve -l 8082 ../RestauranteMexicano\"",
+    "dev": "npm start"
+  },
+  "keywords": [
+    "pwa",
+    "antigravity",
+    "repository"
+  ],
+  "author": "Antigravity AI",
+  "license": "MIT"
+}
