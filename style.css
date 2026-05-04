@@ -335,12 +335,27 @@ a {
   font-weight: 600;
 }
 
+.repo-name {
+  width: fit-content;
+  display: block;
+  margin-top: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(8, 11, 18, 0.58);
+  padding: 0.45rem 0.7rem;
+  color: var(--lime);
+  font-size: 0.78rem;
+  font-weight: 900;
+  word-break: break-word;
+  backdrop-filter: blur(12px);
+}
+
 .project-link {
   width: fit-content;
   min-height: 42px;
   display: inline-flex;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 0.65rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 0.65rem 0.85rem;

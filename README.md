@@ -7,6 +7,8 @@ PWA portfolio para acceder rapidamente a los proyectos creados con Antigravity.
 - Roma Eterna: https://github.com/jonamayuelas2-cell/Roma2
 - Restaurante Mexicano: https://github.com/jonamayuelas2-cell/RestauranteMexicano
 
+Cada tarjeta del panel muestra el nombre del repositorio y abre directamente GitHub.
+
 ## Ejecutar localmente
 
 ```bash
