@@ -1,0 +1,32 @@
+{
+  "name": "Antigravity - Proyectos Web PWA",
+  "short_name": "Antigravity",
+  "description": "Panel moderno para acceder a proyectos creados con Antigravity.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080b12",
+  "theme_color": "#111827",
+  "orientation": "portrait-primary",
+  "lang": "es",
+  "categories": ["productivity", "portfolio", "developer"],
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Roma Eterna",
+      "url": "https://github.com/jonamayuelas2-cell/Roma2",
+      "description": "Abrir el proyecto Roma Eterna"
+    },
+    {
+      "name": "Restaurante Mexicano",
+      "url": "https://github.com/jonamayuelas2-cell/RestauranteMexicano",
+      "description": "Abrir el proyecto Restaurante Mexicano"
+    }
+  ]
+}
