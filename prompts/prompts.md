@@ -33,4 +33,13 @@ Este archivo contiene la secuencia de prompts utilizados para el desarrollo y ma
 **Acción:** Preparación de cambios (`git add`), creación de commit descriptivo y subida al repositorio remoto (`git push`). Inclusión de nuevos archivos de configuración y documentación.
 
 ---
+
+## 📅 Sesión: 11 de Mayo de 2026
+
+### 🔹 Prompt 5: Acceso externo a la PWA
+> "¿que tengo que hacer para poder acceder a las PWA creadas desde equipos externos a mi localhost?"
+
+**Acción:** Explicación técnica sobre el binding de red, identificación de IP local y la importancia crítica del protocolo HTTPS para que los Service Workers funcionen en dispositivos externos. Propuesta de herramientas como ngrok o LocalTunnel. 🛠️🌐
+
+---
 *(Se añadirán más prompts secuencialmente)* 🚀

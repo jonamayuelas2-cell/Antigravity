@@ -17,6 +17,13 @@
 *   **Causa Identificada:** Los proyectos hijos (como Roma o Restaurante Mexicano) que corren en los puertos `8080` y `8082` parecen estar referenciando estas librerías. Al depurar con VS Code (Chrome Debugger), el IDE busca los mapas de fuentes (`.map`) en la carpeta `assets/node_modules/`, la cual no existe en el repositorio raíz. 🕵️‍♂️
 *   **Solución Recomendada:** Estos errores son principalmente informativos del debugger y no afectan la funcionalidad de la PWA. Se recomienda ignorarlos o asegurar que los proyectos hijos incluyan sus propias dependencias localmente si se desea una depuración limpia. ✅
 
+### [2026-05-11] - Guía de Acceso Externo 🌐📲
+*   **Consulta:** Cómo acceder a las PWA desde otros dispositivos (móvil, tablet, otro PC).
+*   **Conclusiones Clave:**
+    1.  **IP Local:** Se debe usar la IP de la máquina host (ej. `192.168.1.XX`).
+    2.  **HTTPS es Obligatorio:** Las PWA solo activan el Service Worker en `localhost` o bajo `HTTPS`. En red local (`http://192.168...`) no se instalarán.
+    3.  **Solución:** Uso de túneles seguros (**ngrok**) o redirección de puertos por USB (Chrome Remote Debugging). ✅
+
 ### [Estado Actual] 📍
 *   **PWA Principal:** Operativa y con Service Worker registrado. 📲
 *   **Ciudades del mundo:** Vinculada al puerto `8080`. 🌍
