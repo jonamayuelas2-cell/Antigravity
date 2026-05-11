@@ -1,5 +1,36 @@
 'use strict';
 
+// Configuración de rutas para local y producción 🚀
+const PROJECT_CONFIG = {
+  isLocal: location.hostname === 'localhost' || location.hostname === '127.0.0.1',
+  projects: {
+    roma: {
+      selector: '.project-roma',
+      local: 'http://localhost:8080/',
+      prod: 'https://roma2-two.vercel.app/' // 👈 Cambia esto por tu URL de Vercel
+    },
+    mexico: {
+      selector: '.project-mexico',
+      local: 'http://localhost:8082/',
+      prod: 'https://restaurante-mexicano-two.vercel.app/' // 👈 Cambia esto por tu URL de Vercel
+    }
+  }
+};
+
+// Actualizar enlaces según el entorno 🌍
+function updateProjectLinks() {
+  if (!PROJECT_CONFIG.isLocal) {
+    Object.values(PROJECT_CONFIG.projects).forEach(project => {
+      const el = document.querySelector(project.selector);
+      if (el) {
+        el.href = project.prod;
+        const info = el.querySelector('.repo-name');
+        if (info) info.textContent = 'Proyecto en producción · Cloud';
+      }
+    });
+  }
+}
+
 const cards = [...document.querySelectorAll('.project-card')];
 
 cards.forEach((card) => {
@@ -15,8 +46,11 @@ cards.forEach((card) => {
   });
 });
 
+// Inicialización
+updateProjectLinks();
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    navigator.serviceWorker.register('./sw.js').catch(() => { });
   });
 }

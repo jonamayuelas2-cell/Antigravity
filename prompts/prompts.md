@@ -42,4 +42,11 @@ Este archivo contiene la secuencia de prompts utilizados para el desarrollo y ma
 **Acción:** Explicación técnica sobre el binding de red, identificación de IP local y la importancia crítica del protocolo HTTPS para que los Service Workers funcionen en dispositivos externos. Propuesta de herramientas como ngrok o LocalTunnel. 🛠️🌐
 
 ---
+
+### 🔹 Prompt 6: Despliegue en Cloud (Vercel/Netlify)
+> "quiero conectarme al repositorio que he subido a versel o netify y acceder como accedo desde mi equipo. la app que he creado de repositorio si la veo, pero no llego a las app que he referenciado desde aqui"
+
+**Acción:** Identificación del problema de rutas absolutas a `localhost`. Explicación de la necesidad de desplegar cada proyecto por separado y configurar URLs dinámicas para que el "Hub" funcione tanto en local como en producción. 🚀☁️
+
+---
 *(Se añadirán más prompts secuencialmente)* 🚀

@@ -24,6 +24,12 @@
     2.  **HTTPS es Obligatorio:** Las PWA solo activan el Service Worker en `localhost` o bajo `HTTPS`. En red local (`http://192.168...`) no se instalarán.
     3.  **Solución:** Uso de túneles seguros (**ngrok**) o redirección de puertos por USB (Chrome Remote Debugging). ✅
 
+### [2026-05-11] - Despliegue en la Nube (Vercel/Netlify) ☁️🚀
+*   **Problema:** Los enlaces al "Roma" y "Restaurante Mexicano" fallan en producción porque apuntan a `localhost`.
+*   **Solución:** 
+    1.  Cada proyecto debe tener su propia URL de producción (desplegarlos individualmente).
+    2.  Implementar lógica en `app.js` para detectar si estamos en producción y cambiar automáticamente los `href` de las tarjetas de proyecto. ✅
+
 ### [Estado Actual] 📍
 *   **PWA Principal:** Operativa y con Service Worker registrado. 📲
 *   **Ciudades del mundo:** Vinculada al puerto `8080`. 🌍
